@@ -1,26 +1,21 @@
 import turtle
-import random
+
+def run_turtle(degree,distance=50):
+    turtle.setheading(degree)
+    turtle.forward(distance)
+    turtle.stamp()
 
 def move_w():
-    turtle.setheading(90)
-    turtle.forward(50)
-    turtle.stamp()
+    run_turtle(90)
 
 def move_a():
-    turtle.setheading(180)
-    turtle.forward(50)
-    turtle.stamp()
+    run_turtle(180)
 
 def move_s():
-    turtle.setheading(270)
-    turtle.forward(50)
-    turtle.stamp()    
+    run_turtle(270)
 
 def move_d():
-    turtle.setheading(0)
-    turtle.forward(50)
-    turtle.stamp()
-    
+    run_turtle(0)    
 
 def restart():
     turtle.reset()
